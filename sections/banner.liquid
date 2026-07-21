@@ -1,32 +1,35 @@
-<section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
+{{ 'banner.css' | asset_url | stylesheet_tag }}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <div class="banner-top">
+</head>
 
-    <div class="banner-logo">
-      {{ section.settings.logo_text }}
-    </div>
+<body>
+    <section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
+  <div class="banner-top" >
+
+   <div class="banner-logo">
+    
+  <img
+    src="{{ 'logo.png' | asset_url }}"
+    alt="Logo"
+  />
+</div>
 
     <div class="banner-message">
-      {{ section.settings.banner_message }}
+     <p> {{ section.settings.banner_message }}</p>
     </div>
 
     <a href="{{ section.settings.choose_gift_link }}"
-       class="banner-btn banner-btn--yellow">
+       class="banner-btn banner-btn--yellow choose_gift_text">
       {{ section.settings.choose_gift_text }}
     </a>
 
   </div>
   <div class="banner-main">
 
-  <div class="banner-image">
-    {% if section.settings.banner_image %}
-      <img   
-        class="banner-image__img"
-        src="{{ section.settings.banner_image | image_url }}"
-        alt="{{ section.settings.heading }}"
-      />
-    {% endif %}
-  </div>
 
   <div class="banner-content">
 
@@ -55,6 +58,7 @@
 
 </section>
 
+</body>
 {% schema %}
 {
   "name": "Gift Guide Banner",
@@ -62,10 +66,9 @@
   "settings": [
 
     {
-      "type": "text",
-      "id": "logo_text",
+      "type": "image_picker",
+      "id": "logo_image",
       "label": "Logo",
-      "default": "TISSO VISION"
     },
 
     {
@@ -97,7 +100,7 @@
         "type": "textarea",
         "id": "description",
         "label": "Description",
-        "default": "Discover Joy: Your Ultimate Holiday Gift Destination..."
+        "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
     },
     {
         "type": "text",
