@@ -51,7 +51,6 @@
   font-weight: 500;
   font-size: 70px;
   line-height: 100%;
-  font-style: Medium;
   letter-spacing: 0px;
   left: 67px;
   position: relative;
@@ -61,9 +60,7 @@
 .banner-description {
   font-family: "Jost";
   font-weight: 400;
-  font-style: Regular;
   font-size: 20px;
-  leading-trim: NONE;
   line-height: 140%;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -79,9 +76,7 @@
   color: white;
   font-family: "Jost";
   font-weight: 400;
-  font-style: Regular;
   font-size: 16px;
-  leading-trim: NONE;
   line-height: 20.48px;
   letter-spacing: 0px;
   text-align: center;
