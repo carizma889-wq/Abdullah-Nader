@@ -1,4 +1,4 @@
-<section class="gift-guide-banner">
+<section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
 
   <div class="banner-top">
 
@@ -10,12 +10,48 @@
       {{ section.settings.banner_message }}
     </div>
 
-    <a href="{{ section.settings.button_link }}"
-       class="banner-btn">
-      {{ section.settings.button_text }}
+    <a href="{{ section.settings.choose_gift_link }}"
+       class="banner-btn banner-btn--yellow">
+      {{ section.settings.choose_gift_text }}
     </a>
 
   </div>
+  <div class="banner-main">
+
+  <div class="banner-image">
+    {% if section.settings.banner_image %}
+      <img   
+        class="banner-image__img"
+        src="{{ section.settings.banner_image | image_url }}"
+        alt="{{ section.settings.heading }}"
+      />
+    {% endif %}
+  </div>
+
+  <div class="banner-content">
+
+    <h1 class="banner-heading">
+      {{ section.settings.heading }}
+    </h1>
+
+    <p class="banner-description">
+      {{ section.settings.description }}
+    </p>
+
+    <a
+      href="{{ section.settings.shop_now_link }}"
+      class="banner-btn banner-btn--black"
+    >
+      {{ section.settings.shop_now_text }}
+    </a>
+
+  </div>
+
+</div>
+
+<div class="banner-footer">
+  {{ section.settings.footer_text }}
+</div>
 
 </section>
 
@@ -41,15 +77,15 @@
 
     {
       "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
+      "id": "choose_gift_text",
+      "label": "Choose Gift Button Text",
       "default": "CHOOSE GIFT"
     },
 
     {
       "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
+      "id": "choose_gift_link",
+      "label": "Choose Gift Button Link"
     },
     {
         "type": "text",
@@ -62,12 +98,6 @@
         "id": "description",
         "label": "Description",
         "default": "Discover Joy: Your Ultimate Holiday Gift Destination..."
-    },
-    {
-        "type": "text",
-        "id": "shop_now_text",
-        "label": "Shop Now Button",
-        "default": "SHOP NOW"
     },
     {
         "type": "text",
@@ -96,7 +126,7 @@
         "id": "background_color",
         "label": "Background Color",
         "default": "#F5E6C8"
-    },
+    }
   ],
 
   "presets": [
