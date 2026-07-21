@@ -42,7 +42,9 @@
 
 .banner-content {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
+  padding-bottom: 30px; /* مسافة أمان تحت الزرار */
+  box-sizing: border-box;
 }
 .banner-heading {
   font-family: "Jost";
@@ -51,6 +53,9 @@
   line-height: 100%;
   font-style: Medium;
   letter-spacing: 0px;
+  left: 67px;
+  position: relative;
+
   vertical-align: middle;
 }
 .banner-description {
@@ -62,6 +67,10 @@
   line-height: 140%;
   letter-spacing: 0px;
   vertical-align: middle;
+  width: 483px;
+  left: 67px;
+  position: relative;
+  padding-bottom: 30px;
 }
 .banner-btn--black {
   width: 220px;
@@ -82,6 +91,7 @@
   left: 67px;
   padding: 10px 10px;
 }
-
 .banner-footer {
+  text-align: center;
+  background-color: #f5f5f5 !important;
 }

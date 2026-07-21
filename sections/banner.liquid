@@ -1,12 +1,7 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-</head>
 
-<body>
+
     <section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
   <div class="banner-top" >
 
@@ -56,9 +51,10 @@
   {{ section.settings.footer_text }}
 </div>
 
+
 </section>
 
-</body>
+
 {% schema %}
 {
   "name": "Gift Guide Banner",
