@@ -43,7 +43,7 @@
 .banner-content {
   position: absolute;
   bottom: 40px;
-  padding-bottom: 30px; /* مسافة أمان تحت الزرار */
+  padding-bottom: 30px; 
   box-sizing: border-box;
 }
 .banner-heading {
