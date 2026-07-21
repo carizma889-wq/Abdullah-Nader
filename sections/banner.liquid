@@ -1,0 +1,63 @@
+<section class="gift-guide-banner">
+
+  <div class="banner-top">
+
+    <div class="banner-logo">
+      {{ section.settings.logo_text }}
+    </div>
+
+    <div class="banner-message">
+      {{ section.settings.banner_message }}
+    </div>
+
+    <a href="{{ section.settings.button_link }}"
+       class="banner-btn">
+      {{ section.settings.button_text }}
+    </a>
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Gift Guide Banner",
+
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo",
+      "default": "TISSO VISION"
+    },
+
+    {
+      "type": "text",
+      "id": "banner_message",
+      "label": "Top Message",
+      "default": "Find the ideal gift for your loved ones."
+    },
+
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "CHOOSE GIFT"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+
+  ],
+
+  "presets": [
+    {
+      "name": "Gift Guide Banner"
+    }
+  ]
+}
+{% endschema %}
