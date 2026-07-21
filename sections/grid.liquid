@@ -1,0 +1,69 @@
+{{ 'grid.css' | asset_url | stylesheet_tag }}
+<section class="gift-guide-grid">
+  <h2 class="grid-heading">{{ section.settings.grid_heading }}</h2>
+
+  <div class="products-grid">
+    {% for block in section.blocks %}
+      {% assign product = block.settings.product %}
+
+      {% if product %}
+        <div class="grid-item" data-product='{{ product | json | escape }}' {{ block.shopify_attributes }}>
+          <img
+            src="{{ product.featured_image | image_url: width: 600 }}"
+            alt="{{ product.title | escape }}"
+            class="grid-item__image"
+            loading="lazy"
+          />
+          <button
+            type="button"
+            class="grid-item__plus-btn"
+            aria-label="View {{ product.title | escape }} details"
+          >
+            +
+          </button>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gift Guide Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "grid_heading",
+      "label": "Section heading",
+      "default": "Tisso vison in the wild"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_card",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Gift Guide Grid",
+      "blocks": [
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" }
+      ]
+    }
+  ]
+}
+{% endschema %}

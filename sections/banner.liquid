@@ -1,6 +1,5 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
-
-
+<script src="{{ 'banner.js' | asset_url }}" defer></script>
 
     <section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
   <div class="banner-top" >
@@ -17,8 +16,8 @@
      <p> {{ section.settings.banner_message }}</p>
     </div>
 
-    <a href="{{ section.settings.choose_gift_link }}"
-       class="banner-btn banner-btn--yellow choose_gift_text">
+    <a href="{{ section.settings.choose_gift_link }}" 
+       class="banner-btn banner-btn--yellow choose_gift_text" id="btnHeader"> 
       {{ section.settings.choose_gift_text }}
     </a>
 
