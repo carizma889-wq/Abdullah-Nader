@@ -18,10 +18,13 @@
           "type": "_announcement",
           "settings": {
             "text": "Welcome to our store",
+            "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
+            "weight": "",
             "letter_spacing": "normal",
-            "case": "none"
+            "case": "none",
+            "text_color": ""
           },
           "blocks": {}
         }
@@ -58,6 +61,8 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
+            "background_color": "{{ settings.color_palette.background }}",
+            "text_color": "",
             "type_font_primary_size": "0.875rem",
             "menu_font_style": "inverse",
             "type_font_primary_link": "body",
@@ -67,6 +72,8 @@
             "featured_collections_aspect_ratio": "16 / 9",
             "image_border_radius": 0,
             "navigation_bar": false,
+            "background_color_navigation_bar": "{{ settings.color_palette.background }}",
+            "text_color_navigation_bar": "",
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
             "drawer_dividers": false
@@ -78,6 +85,7 @@
         "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
+        "customer_account_menu": "customer-account-main-menu",
         "show_search": true,
         "search_position": "right",
         "search_row": "top",
@@ -93,16 +101,119 @@
         "enable_sticky_header": "always",
         "divider_width": 0,
         "divider_size": "page-width",
+        "divider_color": "",
         "border_width": 0,
+        "bottom_border_color": "",
+        "actions_display_style": "icon",
+        "actions_font_size": "0.875rem",
+        "actions_font": "body",
+        "actions_text_case": "none",
         "background_color_top": "{{ settings.color_palette.background }}",
+        "text_color_top": "",
+        "background_color_bottom": "",
+        "text_color_bottom": "",
+        "bubble_style": "default",
+        "bubble_background_color": "",
+        "bubble_text_color": "",
         "enable_transparent_header_home": false,
+        "home_inverse_logo": false,
+        "text_color_transparent_home": "",
         "enable_transparent_header_product": false,
-        "enable_transparent_header_collection": false
+        "product_inverse_logo": false,
+        "text_color_transparent_product": "",
+        "enable_transparent_header_collection": false,
+        "collection_inverse_logo": false,
+        "text_color_transparent_collection": ""
+      }
+    },
+    "banner_GRMXwY": {
+      "type": "banner",
+      "name": "Gift Guide Banner",
+      "settings": {
+        "banner_message": "Find the ideal gift for your loved ones.",
+        "banner_message_mobile": "Find the ideal gift for your loved ones.",
+        "choose_gift_text": "CHOOSE GIFT",
+        "choose_gift_link": "",
+        "heading": "The Gift Guide",
+        "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "description_mobile": "Discover Joy: Your Ultimate Holiday Gift Destination.",
+        "shop_now_text": "SHOP NOW",
+        "shop_now_link": "",
+        "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "footer_text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
+        "background_color": "#F5E6C8"
+      }
+    },
+    "grid_8P4eJq": {
+      "type": "grid",
+      "blocks": {
+        "product_card_r9y6xw": {
+          "type": "product_card",
+          "settings": {
+            "product": "black-leather-bag",
+            "marker_x": 57,
+            "marker_y": 55
+          }
+        },
+        "product_card_RFYMD4": {
+          "type": "product_card",
+          "settings": {
+            "product": "blue-silk-tuxedo",
+            "marker_x": 80,
+            "marker_y": 50
+          }
+        },
+        "product_card_txry9k": {
+          "type": "product_card",
+          "settings": {
+            "product": "chequered-red-shirt",
+            "marker_x": 60,
+            "marker_y": 21
+          }
+        },
+        "product_card_MaExTd": {
+          "type": "product_card",
+          "settings": {
+            "product": "classic-leather-jacket",
+            "marker_x": 70,
+            "marker_y": 20
+          }
+        },
+        "product_card_7V4ULP": {
+          "type": "product_card",
+          "settings": {
+            "product": "classic-varsity-top",
+            "marker_x": 45,
+            "marker_y": 26
+          }
+        },
+        "product_card_b78fiU": {
+          "type": "product_card",
+          "settings": {
+            "product": "dark-denim-top",
+            "marker_x": 72,
+            "marker_y": 38
+          }
+        }
+      },
+      "block_order": [
+        "product_card_r9y6xw",
+        "product_card_RFYMD4",
+        "product_card_txry9k",
+        "product_card_MaExTd",
+        "product_card_7V4ULP",
+        "product_card_b78fiU"
+      ],
+      "name": "Gift Guide Grid",
+      "settings": {
+        "grid_heading": "Tisso vison in the wild"
       }
     }
   },
   "order": [
     "header_announcements_9jGBFp",
-    "header_section"
+    "header_section",
+    "banner_GRMXwY",
+    "grid_8P4eJq"
   ]
 }
