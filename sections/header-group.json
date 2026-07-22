@@ -125,95 +125,10 @@
         "collection_inverse_logo": false,
         "text_color_transparent_collection": ""
       }
-    },
-    "banner_GRMXwY": {
-      "type": "banner",
-      "name": "Gift Guide Banner",
-      "settings": {
-        "banner_message": "Find the ideal gift for your loved ones.",
-        "banner_message_mobile": "Find the ideal gift for your loved ones.",
-        "choose_gift_text": "CHOOSE GIFT",
-        "choose_gift_link": "",
-        "heading": "The Gift Guide",
-        "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
-        "description_mobile": "Discover Joy: Your Ultimate Holiday Gift Destination.",
-        "shop_now_text": "SHOP NOW",
-        "shop_now_link": "",
-        "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
-        "footer_text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
-        "background_color": "#F5E6C8"
-      }
-    },
-    "grid_8P4eJq": {
-      "type": "grid",
-      "blocks": {
-        "product_card_r9y6xw": {
-          "type": "product_card",
-          "settings": {
-            "product": "black-leather-bag",
-            "marker_x": 57,
-            "marker_y": 55
-          }
-        },
-        "product_card_RFYMD4": {
-          "type": "product_card",
-          "settings": {
-            "product": "blue-silk-tuxedo",
-            "marker_x": 80,
-            "marker_y": 50
-          }
-        },
-        "product_card_txry9k": {
-          "type": "product_card",
-          "settings": {
-            "product": "chequered-red-shirt",
-            "marker_x": 60,
-            "marker_y": 21
-          }
-        },
-        "product_card_MaExTd": {
-          "type": "product_card",
-          "settings": {
-            "product": "classic-leather-jacket",
-            "marker_x": 70,
-            "marker_y": 20
-          }
-        },
-        "product_card_7V4ULP": {
-          "type": "product_card",
-          "settings": {
-            "product": "classic-varsity-top",
-            "marker_x": 45,
-            "marker_y": 26
-          }
-        },
-        "product_card_b78fiU": {
-          "type": "product_card",
-          "settings": {
-            "product": "dark-denim-top",
-            "marker_x": 72,
-            "marker_y": 38
-          }
-        }
-      },
-      "block_order": [
-        "product_card_r9y6xw",
-        "product_card_RFYMD4",
-        "product_card_txry9k",
-        "product_card_MaExTd",
-        "product_card_7V4ULP",
-        "product_card_b78fiU"
-      ],
-      "name": "Gift Guide Grid",
-      "settings": {
-        "grid_heading": "Tisso vison in the wild"
-      }
     }
   },
   "order": [
     "header_announcements_9jGBFp",
-    "header_section",
-    "banner_GRMXwY",
-    "grid_8P4eJq"
+    "header_section"
   ]
 }
