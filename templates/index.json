@@ -305,13 +305,67 @@
         "shop_now_text": "SHOP NOW",
         "shop_now_link": "",
         "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
-        "background_color": "#F5E6C8"
+        "background_color": "#f5e6c8"
+      }
+    },
+    "grid_rxfgyJ": {
+      "type": "grid",
+      "blocks": {
+        "product_card_gVAxeD": {
+          "type": "product_card",
+          "settings": {
+            "product": "black-leather-bag"
+          }
+        },
+        "product_card_kaUVqD": {
+          "type": "product_card",
+          "settings": {
+            "product": "blue-silk-tuxedo"
+          }
+        },
+        "product_card_7zEiYY": {
+          "type": "product_card",
+          "settings": {
+            "product": "chequered-red-shirt"
+          }
+        },
+        "product_card_zkL3zn": {
+          "type": "product_card",
+          "settings": {
+            "product": "classic-leather-jacket"
+          }
+        },
+        "product_card_YXzzFn": {
+          "type": "product_card",
+          "settings": {
+            "product": "classic-varsity-top"
+          }
+        },
+        "product_card_aB4Qyy": {
+          "type": "product_card",
+          "settings": {
+            "product": "dark-denim-top"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_gVAxeD",
+        "product_card_kaUVqD",
+        "product_card_7zEiYY",
+        "product_card_zkL3zn",
+        "product_card_YXzzFn",
+        "product_card_aB4Qyy"
+      ],
+      "name": "Gift Guide Grid",
+      "settings": {
+        "grid_heading": "Tisso vison in the wild"
       }
     }
   },
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
-    "banner_wVrVnT"
+    "banner_wVrVnT",
+    "grid_rxfgyJ"
   ]
 }
