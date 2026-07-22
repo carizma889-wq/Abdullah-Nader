@@ -1,28 +1,20 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'banner.js' | asset_url }}" defer></script>
 
-    <section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
+<section class="gift-guide-banner" style="background-color: {{ section.settings.background_color }};">
   <div class="banner-top" >
-
-   <div class="banner-logo">
-    
-  <img
-    src="{{ 'logo.png' | asset_url }}"
-    alt="Logo"
-  />
-</div>
-
-    <div class="banner-message">
-     <p> {{ section.settings.banner_message }}</p>
+    <div class="banner-logo">
+      <img src="{{ 'logo.png' | asset_url }}"alt="Logo"/>
     </div>
 
-    <a href="{{ section.settings.choose_gift_link }}" 
-       class="banner-btn banner-btn--yellow choose_gift_text" id="btnHeader"> 
-      {{ section.settings.choose_gift_text }}
-    </a>
+    <div class="banner-message">
+      <p> {{ section.settings.banner_message }}</p>
+    </div>
+    <a href="{{ section.settings.choose_gift_link }}" class="banner-btn banner-btn--yellow choose_gift_text" id="btnHeader"> {{ section.settings.choose_gift_text }}</a>
 
   </div>
-  <div class="banner-main">
+
+<div class="banner-main">
 
 
   <div class="banner-content">
@@ -72,6 +64,12 @@
       "label": "Top Message",
       "default": "Find the ideal gift for your loved ones."
     },
+    {
+      "type": "text",
+      "id": "banner_message_mobile",
+      "label": "Top Message (Mobile)",
+      "default": "Find the ideal gift for your loved ones."
+    },
 
     {
       "type": "text",
@@ -96,6 +94,12 @@
         "id": "description",
         "label": "Description",
         "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+    },
+    {
+    "type": "textarea",
+    "id": "description_mobile",
+    "label": "Description (Mobile)",
+    "default": "Discover Joy: Your Ultimate Holiday Gift Destination."
     },
     {
         "type": "text",
@@ -133,4 +137,4 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %} 

@@ -93,3 +93,20 @@
   text-align: center;
   background-color: #f5f5f5 !important;
 }
+/* media  */
+
+@media (max-width: 776px) {
+  .banner-logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .banner-message {
+    display: none;
+  }
+  .choose_gift_text {
+    display: none;
+  }
+  .banner-heading {
+    font-size: 30px;
+  }
+}
