@@ -307,65 +307,11 @@
         "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
         "background_color": "#f5e6c8"
       }
-    },
-    "grid_xWdWjJ": {
-      "type": "grid",
-      "blocks": {
-        "product_card_pRTEcm": {
-          "type": "product_card",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_card_Lx4Mxy": {
-          "type": "product_card",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_card_keHJ6H": {
-          "type": "product_card",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_card_yGxjd6": {
-          "type": "product_card",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_card_hMPEXJ": {
-          "type": "product_card",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_card_zVJyjR": {
-          "type": "product_card",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_card_pRTEcm",
-        "product_card_Lx4Mxy",
-        "product_card_keHJ6H",
-        "product_card_yGxjd6",
-        "product_card_hMPEXJ",
-        "product_card_zVJyjR"
-      ],
-      "name": "Gift Guide Grid",
-      "settings": {
-        "grid_heading": "Tisso vison in the wild"
-      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
-    "banner_wVrVnT",
-    "grid_xWdWjJ"
+    "banner_wVrVnT"
   ]
 }
