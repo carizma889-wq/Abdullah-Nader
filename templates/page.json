@@ -51,6 +51,7 @@
         "heading",
         "page-content"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -115,17 +116,17 @@
         "product_card_QgTfq3": {
           "type": "product_card",
           "settings": {
-            "product": "",
-            "marker_x": 50,
-            "marker_y": 50
+            "product": "classic-varsity-top",
+            "marker_x": 45,
+            "marker_y": 27
           }
         },
         "product_card_Vigi9T": {
           "type": "product_card",
           "settings": {
-            "product": "",
-            "marker_x": 50,
-            "marker_y": 50
+            "product": "dark-denim-top",
+            "marker_x": 72,
+            "marker_y": 35
           }
         }
       },
