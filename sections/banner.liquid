@@ -23,16 +23,14 @@
       {{ section.settings.heading }}
     </h1>
 
-    <p class="banner-description">
+    <p class="banner-description banner-description--desktop">
       {{ section.settings.description }}
     </p>
+    <p class="banner-description banner-description--mobile">
+      {{ section.settings.description_mobile }}
+    </p>
 
-    <a
-      href="{{ section.settings.shop_now_link }}"
-      class="banner-btn banner-btn--black"
-    >
-      {{ section.settings.shop_now_text }}
-    </a>
+    <a href="{{ section.settings.shop_now_link }}" class="banner-btn banner-btn--black">{{ section.settings.shop_now_text }}</a>
 
   </div>
 
@@ -117,6 +115,12 @@
         "id": "footer_text",
         "label": "Footer Text",
         "default": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+    },
+    {
+      "type": "text",
+      "id":"footer_text_mobile",
+      "label": "Footer text (mobile)",
+      "default":"SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
     },
     {
         "type": "image_picker",
