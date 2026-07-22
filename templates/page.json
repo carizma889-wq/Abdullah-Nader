@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -14,6 +15,7 @@
         "heading": {
           "type": "text",
           "name": "t:names.title",
+          "disabled": true,
           "settings": {
             "text": "<h1>{{ closest.page.title }}</h1>",
             "width": "100%",
@@ -21,10 +23,12 @@
             "alignment": "left",
             "type_preset": "h2",
             "font": "var(--font-body--family)",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -37,7 +41,9 @@
         },
         "page-content": {
           "type": "page-content",
-          "settings": {},
+          "settings": {
+            "text_color": ""
+          },
           "blocks": {}
         }
       },
@@ -52,9 +58,94 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "banner_ewhiVk": {
+      "type": "banner",
+      "name": "Gift Guide Banner",
+      "settings": {
+        "banner_message": "Find the ideal gift for your loved ones.",
+        "banner_message_mobile": "Find the ideal gift for your loved ones.",
+        "choose_gift_text": "CHOOSE GIFT",
+        "choose_gift_link": "",
+        "heading": "The Gift Guide",
+        "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "description_mobile": "Discover Joy: Your Ultimate Holiday Gift Destination.",
+        "shop_now_text": "SHOP NOW",
+        "shop_now_link": "",
+        "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "footer_text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
+        "background_color": "#F5E6C8"
+      }
+    },
+    "grid_wfa4U7": {
+      "type": "grid",
+      "blocks": {
+        "product_card_MKKCEW": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "marker_x": 50,
+            "marker_y": 50
+          }
+        },
+        "product_card_VUjGzM": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "marker_x": 50,
+            "marker_y": 50
+          }
+        },
+        "product_card_GxERYp": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "marker_x": 50,
+            "marker_y": 50
+          }
+        },
+        "product_card_L3KfpR": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "marker_x": 50,
+            "marker_y": 50
+          }
+        },
+        "product_card_QgTfq3": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "marker_x": 50,
+            "marker_y": 50
+          }
+        },
+        "product_card_Vigi9T": {
+          "type": "product_card",
+          "settings": {
+            "product": "",
+            "marker_x": 50,
+            "marker_y": 50
+          }
+        }
+      },
+      "block_order": [
+        "product_card_MKKCEW",
+        "product_card_VUjGzM",
+        "product_card_GxERYp",
+        "product_card_L3KfpR",
+        "product_card_QgTfq3",
+        "product_card_Vigi9T"
+      ],
+      "name": "Gift Guide Grid",
+      "settings": {
+        "grid_heading": "Tisso vison in the wild"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "banner_ewhiVk",
+    "grid_wfa4U7"
   ]
 }
