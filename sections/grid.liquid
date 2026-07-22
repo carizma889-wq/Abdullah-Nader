@@ -8,8 +8,11 @@
       {% assign product = block.settings.product %}
 
       {% if product %}
-        <div class="grid-item" data-product="{{ product | json | escape }}" {{ block.shopify_attributes }}>
-          <img
+        <div 
+        class="grid-item"
+          data-product="{{ product | json | escape }}"
+          {{ block.shopify_attributes }}>
+          <img 
             src="{{ product.featured_image | image_url: width: 600 }}"
             alt="{{ product.title | escape }}"
             class="grid-item__image"
@@ -18,6 +21,7 @@
           <button
             type="button"
             class="grid-item__plus-btn"
+            id="BtnCard"
             aria-label="View {{ product.title | escape }} details"
             style="left: {{block.settings.marker_x}}%; top: {{block.settings.marker_y}}%;"
           >
@@ -26,25 +30,26 @@
         </div>
       {% endif %}
     {% endfor %}
-  </div>
-  <div class="product-popup" id="productPopup" hidden>
-    <div class="product-popup__overlay" data-popup-close></div>
-    <div class="product-popup__content">
-      <button type="button" class="product-popup__close" data-popup-close aria-label="Close">×</button>
+    <div  id="product">
+      <div id="cardProduct">
+        <div class="content_product">
+          <div class="img_content_product"></div>
+          <div class="details_content_product">
+            <div class="title_details_content_product"></div>
+            <div class="salary_details_content_product"></div>
+            <div class="desc_details_content_product"></div>
+          </div>
 
-      <img class="product-popup__image" src="#" alt="" />
-
-      <div class="product-popup__details">
-        <h3 class="product-popup__title"></h3>
-        <p class="product-popup__price"></p>
-        <p class="product-popup__description"></p>
-
-        <div class="product-popup__options"></div>
-
-        <button type="button" class="product-popup__add-btn">ADD TO CART →</button>
+        </div>
+        <div class="detailsProduct">
+          <div class="color_detailsProduct"></div>
+          <div class="size_detailsProduct"></div>
+          <button class="btnCart">Add to cart <img class="arrow" src="../assets/arrowButton.png" alt="arrow"> </button>
+        </div>
       </div>
     </div>
   </div>
+
 </section>
 
 {% schema %}

@@ -31,6 +31,10 @@
   text-decoration: none;
   color: #000;
 }
+.choose_gift_text img {
+  width: 30px;
+  margin-left: 20px;
+}
 
 .choose_gift_text::before {
   content: "";
@@ -98,6 +102,10 @@
   text-transform: uppercase;
   z-index: 1;
   transition: color 0.4s ease;
+}
+.banner-btn--black img {
+  width: 30px;
+  margin-left: 20px;
 }
 .banner-btn--black::before {
   content: "";
@@ -170,6 +178,7 @@
   .banner-description {
     transform: translateY(-180px);
   }
+
   .banner-btn--black {
     margin: auto;
   }
