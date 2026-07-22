@@ -323,7 +323,7 @@
           "type": "product_card",
           "settings": {
             "product": "blue-silk-tuxedo",
-            "marker_x": 50,
+            "marker_x": 82,
             "marker_y": 50
           }
         },
@@ -331,32 +331,32 @@
           "type": "product_card",
           "settings": {
             "product": "chequered-red-shirt",
-            "marker_x": 50,
-            "marker_y": 50
+            "marker_x": 59,
+            "marker_y": 20
           }
         },
         "product_card_zkL3zn": {
           "type": "product_card",
           "settings": {
             "product": "classic-leather-jacket",
-            "marker_x": 59,
-            "marker_y": 72
+            "marker_x": 73,
+            "marker_y": 13
           }
         },
         "product_card_YXzzFn": {
           "type": "product_card",
           "settings": {
             "product": "classic-varsity-top",
-            "marker_x": 50,
-            "marker_y": 50
+            "marker_x": 43,
+            "marker_y": 23
           }
         },
         "product_card_aB4Qyy": {
           "type": "product_card",
           "settings": {
             "product": "dark-denim-top",
-            "marker_x": 50,
-            "marker_y": 50
+            "marker_x": 72,
+            "marker_y": 35
           }
         }
       },
